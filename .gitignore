@@ -1,0 +1,10 @@
+
+
+# Mac OS
+.DS_Store
+
+.idea
+.dist
+.gradle
+build
+out
