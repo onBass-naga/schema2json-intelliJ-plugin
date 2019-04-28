@@ -1,0 +1,39 @@
+<idea-plugin url="https://www.jetbrains.com/idea">
+
+    <name>Schema2Json</name>
+
+    <id>com.area-b.schema2json-intelliJ-plugin</id>
+
+    <description>
+        <![CDATA[
+        <p>Exporting RDB schema metadata as JSON.</p><br/>
+        <p>This plugin supports PostgreSQL/MySQL.</p>
+        ]]>
+    </description>
+
+    <change-notes>
+        <![CDATA[
+            <ul>
+                <li>1.0 - Initial version</li>
+            </ul>
+        ]]>
+    </change-notes>
+
+    <version>1.0</version>
+
+    <vendor url="https://github.com/onBass-naga/schema2json-intelliJ-plugin" email="naga@area-b.com" />
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <idea-version since-build="181"/>
+
+
+    <!--<actions></actions>-->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Schema2Json" anchor="right" icon="/schema2json/s2j-icon-12.svg"
+                    factoryClass="schema2json.ExtensionToolWindow"/>
+        <applicationService serviceImplementation="schema2json.Schema2JsonState" />
+    </extensions>
+
+</idea-plugin>
